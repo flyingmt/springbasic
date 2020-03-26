@@ -3,7 +3,7 @@ package kr.co.fastcampus.cli.di;
 public class A {
     private B b;
 
-    public A(B b) {
+    public void setB(B b) {
         this.b = b;
     }
 

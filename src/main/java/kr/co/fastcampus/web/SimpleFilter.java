@@ -9,7 +9,7 @@ import java.io.IOException;
 
 @WebFilter(
         filterName = "simpleFilter",
-        urlPatterns = "simple"
+        urlPatterns = "/simple"
 )
 @Slf4j
 public class SimpleFilter implements Filter {

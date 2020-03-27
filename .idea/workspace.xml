@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1316103-a6af-4b21-81f7-980e986f21e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Dao2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/di/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/di/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/di/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +55,11 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="kr.co.fastcampus.cli" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kr.co.fastcampus.cli" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.web.Main" />
       <module name="springbasic" />
@@ -89,8 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
@@ -117,10 +129,10 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="510" y="163" key="#Project_Structure/0.40.1920.1040@0.40.1920.1040" timestamp="1585046368730" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1585265853447">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1585306242784">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1585265853447" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1585306242784" />
     <state x="746" y="400" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585180115997">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -129,22 +141,22 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="698" y="259" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1585046309034" />
-    <state width="1877" height="238" key="GridCell.Tab.0.bottom" timestamp="1585265903292">
+    <state width="1877" height="172" key="GridCell.Tab.0.bottom" timestamp="1585306792817">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="238" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1585265903292" />
-    <state width="1877" height="238" key="GridCell.Tab.0.center" timestamp="1585265903292">
+    <state width="1877" height="172" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1585306792817" />
+    <state width="1877" height="172" key="GridCell.Tab.0.center" timestamp="1585306792816">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="238" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1585265903292" />
-    <state width="1877" height="238" key="GridCell.Tab.0.left" timestamp="1585265903292">
+    <state width="1877" height="172" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1585306792816" />
+    <state width="1877" height="172" key="GridCell.Tab.0.left" timestamp="1585306792816">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="238" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1585265903292" />
-    <state width="1877" height="238" key="GridCell.Tab.0.right" timestamp="1585265903292">
+    <state width="1877" height="172" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1585306792816" />
+    <state width="1877" height="172" key="GridCell.Tab.0.right" timestamp="1585306792816">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="238" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1585265903292" />
+    <state width="1877" height="172" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1585306792816" />
     <state x="461" y="202" key="SettingsEditor" timestamp="1585177490539">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -157,9 +169,9 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="629" y="384" key="com.intellij.ide.util.TipDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1585045608386" />
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1585265850319">
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1585306239768">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1585265850319" />
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1585306239768" />
   </component>
 </project>

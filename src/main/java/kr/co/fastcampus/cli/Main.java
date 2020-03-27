@@ -5,15 +5,23 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.sql.SQLException;
+
 class Main {
 	private static Logger logger = LoggerFactory.getLogger(Main.class);
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
 		logger.info("Hello, world!!");
+
+		try {
+			Class.forName("org.h2.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("dao.xml");
 
-		var dao = context.getBean("dao", Dao.class);
-		dao.run();
+		var dao2 = context.getBean("dao2", Dao2.class);
+		dao2.run();
 	}
 }

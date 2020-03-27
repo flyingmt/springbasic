@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b1316103-a6af-4b21-81f7-980e986f21e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/di/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/di/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dao.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

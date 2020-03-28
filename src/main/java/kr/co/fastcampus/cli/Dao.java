@@ -13,6 +13,14 @@ public class Dao {
         this.connection = connection;
     }
 
+    void init() {
+        log.info("init");
+    }
+
+    void destroy() {
+        log.info("destroy");
+    }
+
     public void run() throws SQLException {
         var statement = connection.createStatement();
 

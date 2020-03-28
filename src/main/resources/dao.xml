@@ -19,8 +19,4 @@
         <constructor-arg ref="connection" />
     </bean>
 
-    <bean id="dao2" class="kr.co.fastcampus.cli.Dao2" lazy-init="true">
-        <constructor-arg ref="connection" />
-    </bean>
-
 </beans>

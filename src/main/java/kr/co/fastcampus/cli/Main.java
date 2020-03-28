@@ -15,7 +15,7 @@ class Main {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("dao.xml");
 
-		var dao2 = context.getBean("dao2", Dao2.class);
-		dao2.run();
+		var dao = context.getBean("dao", Dao.class);
+		dao.run();
 	}
 }

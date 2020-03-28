@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b1316103-a6af-4b21-81f7-980e986f21e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Dao2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bean.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dao.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,6 +170,10 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="746" y="400" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.40.1920.1040@0.40.1920.1040" timestamp="1585180115997" />
+    <state x="584" y="247" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585360722014">
+      <screen x="0" y="40" width="1707" height="920" />
+    </state>
+    <state x="584" y="247" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1707.920/-2560.0.1707.1027@0.40.1707.920" timestamp="1585360722014" />
     <state x="698" y="259" key="FileChooserDialogImpl" timestamp="1585046309034">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>

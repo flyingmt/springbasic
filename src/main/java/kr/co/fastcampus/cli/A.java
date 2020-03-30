@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class A {
     private B b;
 
-    //@Autowired
-    public A(B b) {
+    @Autowired
+    public void setB(B b) {
         this.b = b;
     }
 }

@@ -14,10 +14,12 @@ public class A {
     @Resource(name="appBeanB1") private B b;
     @Autowired private ApplicationContext context;
     @Value("${catalog.name}") String catalogName;
+    @Value("#{systemProperties['java.home']}") String javaHome;
 
     @PostConstruct
     void init() {
         log.info("" + context);
         log.info("" + catalogName);
+        log.info("" + javaHome);
     }
 }

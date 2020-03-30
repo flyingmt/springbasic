@@ -10,13 +10,13 @@ public class AppConfig {
 
     @Bean
     @Qualifier("b1")
-    public B b1() {
+    public B appBeanB1() {
         return new B();
     }
 
     @Bean
     @Qualifier("b2")
-    public B b2() {
+    public B appBeanB2() {
         return new B();
     }
 }

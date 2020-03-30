@@ -20,4 +20,8 @@
         <constructor-arg ref="connection" />
     </bean>
 
+    <bean class="kr.co.fastcampus.cli.A">
+
+    </bean>
+
 </beans>

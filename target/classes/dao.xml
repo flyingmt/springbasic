@@ -24,12 +24,7 @@
         <constructor-arg ref="connection" />
     </bean>
 
-    <bean class="kr.co.fastcampus.cli.B">
-        <qualifier value="b1" />
-    </bean>
-    <bean class="kr.co.fastcampus.cli.B">
-        <qualifier value="b2" />
-    </bean>
+    <bean class="kr.co.fastcampus.cli.AppConfig" />
     <bean class="kr.co.fastcampus.cli.A" />
 
 

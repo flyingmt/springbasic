@@ -1,10 +1,12 @@
 package kr.co.fastcampus.cli;
 
+import kr.co.fastcampus.cli.service.MyService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
 import java.sql.Connection;
 
@@ -31,5 +33,15 @@ public class AppConfig {
 
     ) {
         return new ConnectionFactory(driverClass, url, user, password);
+    }
+
+    @Bean
+    public LocalValidatorFactoryBean localValidatorFactoryBean() {
+        return new LocalValidatorFactoryBean();
+    }
+
+    @Bean
+    public MyService myService() {
+        return new MyService();
     }
 }

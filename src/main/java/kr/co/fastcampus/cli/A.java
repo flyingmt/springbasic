@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 @Slf4j
 @Component
 public class A {
-    @Resource private B b;
+    @Autowired private B b;
     @Autowired private ApplicationContext context;
     @Value("${catalog.name}") String catalogName;
     @Value("#{systemProperties['java.home']}") String javaHome;

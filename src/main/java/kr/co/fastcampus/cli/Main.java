@@ -14,9 +14,10 @@ class Main {
 		log.info("Hello, world!!");
 
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-		context.register(AppConfig.class);
+		//context.register(AppConfig.class);
+		context.scan("kr.co.fastcampus.cli");
 		context.refresh();
-		
+
 		val b = context.getBean(B.class);
 		log.info("" + b);
 

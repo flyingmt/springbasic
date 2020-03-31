@@ -10,21 +10,16 @@ import javax.annotation.PreDestroy;
 
 @Slf4j
 public class A {
-    @Autowired private B b;
-    @Autowired private ApplicationContext context;
-    @Value("${catalog.name}") String catalogName;
-    @Value("#{systemProperties['java.home']}") String javaHome;
-    @Value("#{systemProperties['hello']}") String hello;
+    private B b;
 
-    @PostConstruct
-    void init() {
-        log.info("" + context);
-        log.info("" + catalogName);
-        log.info("" + javaHome);
-        log.info("" + hello);
+    public A(B b) {
+        this.b = b;
     }
 
-    @PreDestroy
+    void init() {
+        log.info("init");
+    }
+
     void destroy() {
         log.info("destroy");
     }

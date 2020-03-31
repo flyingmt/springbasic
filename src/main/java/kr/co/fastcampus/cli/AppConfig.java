@@ -12,5 +12,9 @@ public class AppConfig {
         return new B();
     }
 
+    @Bean(initMethod = "init", destroyMethod = "destroy")
+    public A a(B b) {
+        return new A(b);
+    }
 
 }

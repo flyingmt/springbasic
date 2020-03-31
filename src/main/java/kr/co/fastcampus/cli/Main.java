@@ -9,20 +9,17 @@ import org.springframework.context.annotation.Configuration;
 import java.sql.SQLException;
 
 @Slf4j
-@Configuration
-@ComponentScan(basePackageClasses = Main.class)
 class Main {
 	public static void main(String[] args) throws SQLException {
 		log.info("Hello, world!!");
 
-		//ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("dao.xml");
-		ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(Main.class);
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+		context.register(AppConfig.class);
+		context.refresh();
+		
 		val b = context.getBean(B.class);
 		log.info("" + b);
 
-		//ConnectionFactory factory = context.getBean(ConnectionFactory.class);
-		//Connection connection = factory.getConnection();
-		//log.info("" + (connection != null));
 		context.close();
 
 	}

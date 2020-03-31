@@ -1,19 +1,17 @@
 package kr.co.fastcampus.cli;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import javax.inject.Inject;
-import javax.inject.Named;
 
 @Slf4j
-@Named("a")
 public class A {
-    @Inject private B b;
-    @Inject private ApplicationContext context;
+    @Autowired private B b;
+    @Autowired private ApplicationContext context;
     @Value("${catalog.name}") String catalogName;
     @Value("#{systemProperties['java.home']}") String javaHome;
     @Value("#{systemProperties['hello']}") String hello;

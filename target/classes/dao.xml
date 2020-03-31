@@ -11,11 +11,13 @@
 
     <context:component-scan base-package="kr.co.fastcampus.cli" />
 
+    <context:property-placeholder location="classpath:application.properties" />
+
     <bean id="connectionFactory" class="kr.co.fastcampus.cli.ConnectionFactory">
-        <constructor-arg name="driverClass" value="org.h2.Driver" />
-        <constructor-arg name="url" value="jdbc:h2:mem:test;MODE=MySQL;" />
-        <constructor-arg name="user" value="sa" />
-        <constructor-arg name="password" value="" />
+        <constructor-arg name="driverClass" value="${jdbc.driver-class}" />
+        <constructor-arg name="url" value="${jdbc.url}" />
+        <constructor-arg name="user" value="${jdbc.user}" />
+        <constructor-arg name="password" value="${jdbc.password}" />
     </bean>
 
     <bean id="connection" class="java.sql.Connection"

@@ -13,7 +13,7 @@ class Main {
 		log.info("Hello, world!!");
 
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-		context.register(AppDefaultConfig.class, AppDevConfig.class, AppConfig.class);
+		context.register(AppConfig.class);
 		context.refresh();
 		var dao = context.getBean(Dao.class);
 		dao.run();

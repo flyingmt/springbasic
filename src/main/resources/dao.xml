@@ -12,7 +12,7 @@
     <context:annotation-config/>
 
     <context:component-scan base-package="kr.co.fastcampus.cli" />
-    <context:property-placeholder location="classpath:application.properties" />
+    <context:property-placeholder location="classpath:application-default.properties" />
 
     <beans profile="default">
         <bean id="connectionFactory" class="kr.co.fastcampus.cli.ConnectionFactory">

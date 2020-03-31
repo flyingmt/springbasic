@@ -10,24 +10,43 @@
     <context:annotation-config/>
 
     <context:component-scan base-package="kr.co.fastcampus.cli" />
-
     <context:property-placeholder location="classpath:application.properties" />
 
-    <bean id="connectionFactory" class="kr.co.fastcampus.cli.ConnectionFactory">
-        <constructor-arg name="driverClass" value="${jdbc.driver-class}" />
-        <constructor-arg name="url" value="${jdbc.url}" />
-        <constructor-arg name="user" value="${jdbc.user}" />
-        <constructor-arg name="password" value="${jdbc.password}" />
-    </bean>
+    <beans profile="default">
+        <bean id="connectionFactory" class="kr.co.fastcampus.cli.ConnectionFactory">
+            <constructor-arg name="driverClass" value="org.h2.Driver" />
+            <constructor-arg name="url" value="jdbc:h2:mem:test" />
+            <constructor-arg name="user" value="sa" />
+            <constructor-arg name="password" value="" />
+        </bean>
+        <bean id="connection" class="java.sql.Connection"
+              factory-bean="connectionFactory"
+              factory-method="createConnection" />
 
-    <bean id="connection" class="java.sql.Connection"
-          factory-bean="connectionFactory"
-          factory-method="createConnection" />
+        <bean id="dao" class="kr.co.fastcampus.cli.Dao">
+            <constructor-arg ref="connection" />
+        </bean>
+        <bean class="kr.co.fastcampus.cli.AppConfig" />
+    </beans>
 
-    <bean id="dao" class="kr.co.fastcampus.cli.Dao">
-        <constructor-arg ref="connection" />
-    </bean>
+    <beans profile="dev">
+        <bean id="connectionFactory" class="kr.co.fastcampus.cli.ConnectionFactory">
+            <constructor-arg name="driverClass" value="org.h2.Driver" />
+            <constructor-arg name="url" value="jdbc:h2:file:~/test" />
+            <constructor-arg name="user" value="sa" />
+            <constructor-arg name="password" value="" />
+        </bean>
+        <bean id="connection" class="java.sql.Connection"
+              factory-bean="connectionFactory"
+              factory-method="createConnection" />
 
-    <bean class="kr.co.fastcampus.cli.AppConfig" />
+        <bean id="dao" class="kr.co.fastcampus.cli.Dao">
+            <constructor-arg ref="connection" />
+        </bean>
+        <bean class="kr.co.fastcampus.cli.AppConfig" />
+    </beans>
+
+
+
 
 </beans>

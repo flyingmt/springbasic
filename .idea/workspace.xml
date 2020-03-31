@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1316103-a6af-4b21-81f7-980e986f21e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/validation/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/validation/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/validation/PersonValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/A.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/AppDefaultConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/AppDevConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-default.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring.components" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring.components" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/B.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +59,13 @@
       <recent name="C:\Jun\Study\springbasic\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.web.Main" />
+  <component name="RunManager" selected="Application.Main (3)">
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.cli.di.Main" />
       <module name="springbasic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kr.co.fastcampus.web.*" />
+          <option name="PATTERN" value="kr.co.fastcampus.cli.di.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.cli.di.Main" />
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.cli.validation.Main" />
       <module name="springbasic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kr.co.fastcampus.cli.di.*" />
+          <option name="PATTERN" value="kr.co.fastcampus.cli.validation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,18 +134,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="JUnit.BeanScopeTest.testEquals" />
       <item itemvalue="JUnit.BeanScopeTest.testIdenity" />
+      <item itemvalue="Application.Main (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BeanScopeTest.testEquals" />
         <item itemvalue="JUnit.BeanScopeTest.testIdenity" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -188,11 +185,11 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="746" y="400" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.40.1920.1040@0.40.1920.1040" timestamp="1585180115997" />
-    <state x="657" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585621106631">
+    <state x="657" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585630494202">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="584" y="247" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1707.920/-2560.0.1707.1027@0.40.1707.920" timestamp="1585360722014" />
-    <state x="657" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1585621106631" />
+    <state x="657" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1585630494202" />
     <state x="607" y="62" key="CommitChangelistDialog2" timestamp="1585610915588">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -201,29 +198,29 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="698" y="259" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1585046309034" />
-    <state width="1877" height="351" key="GridCell.Tab.0.bottom" timestamp="1585621198386">
+    <state width="1877" height="351" key="GridCell.Tab.0.bottom" timestamp="1585631166949">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="1663" height="172" key="GridCell.Tab.0.bottom/0.40.1707.920/-2560.0.1707.1027@0.40.1707.920" timestamp="1585362065024" />
-    <state width="1877" height="351" key="GridCell.Tab.0.bottom/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1585621198386" />
+    <state width="1877" height="351" key="GridCell.Tab.0.bottom/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1585631166949" />
     <state width="1877" height="172" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1585541247079" />
-    <state width="1877" height="351" key="GridCell.Tab.0.center" timestamp="1585621198386">
+    <state width="1877" height="351" key="GridCell.Tab.0.center" timestamp="1585631166949">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="1663" height="172" key="GridCell.Tab.0.center/0.40.1707.920/-2560.0.1707.1027@0.40.1707.920" timestamp="1585362065023" />
-    <state width="1877" height="351" key="GridCell.Tab.0.center/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1585621198386" />
+    <state width="1877" height="351" key="GridCell.Tab.0.center/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1585631166949" />
     <state width="1877" height="172" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1585541247078" />
-    <state width="1877" height="351" key="GridCell.Tab.0.left" timestamp="1585621198385">
+    <state width="1877" height="351" key="GridCell.Tab.0.left" timestamp="1585631166949">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="1663" height="172" key="GridCell.Tab.0.left/0.40.1707.920/-2560.0.1707.1027@0.40.1707.920" timestamp="1585362065023" />
-    <state width="1877" height="351" key="GridCell.Tab.0.left/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1585621198385" />
+    <state width="1877" height="351" key="GridCell.Tab.0.left/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1585631166949" />
     <state width="1877" height="172" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1585541247078" />
-    <state width="1877" height="351" key="GridCell.Tab.0.right" timestamp="1585621198386">
+    <state width="1877" height="351" key="GridCell.Tab.0.right" timestamp="1585631166949">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="1663" height="172" key="GridCell.Tab.0.right/0.40.1707.920/-2560.0.1707.1027@0.40.1707.920" timestamp="1585362065024" />
-    <state width="1877" height="351" key="GridCell.Tab.0.right/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1585621198386" />
+    <state width="1877" height="351" key="GridCell.Tab.0.right/0.40.1920.1040/-1920.40.1920.1040@0.40.1920.1040" timestamp="1585631166949" />
     <state width="1877" height="172" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1585541247078" />
     <state width="1877" height="325" key="GridCell.Tab.1.bottom" timestamp="1585610475576">
       <screen x="0" y="40" width="1920" height="1040" />

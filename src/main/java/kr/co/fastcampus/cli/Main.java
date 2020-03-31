@@ -2,9 +2,7 @@ package kr.co.fastcampus.cli;
 
 import kr.co.fastcampus.cli.service.MyService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.sql.SQLException;
 
@@ -21,6 +19,5 @@ class Main {
 		myService.check();
 
 		context.close();
-
 	}
 }

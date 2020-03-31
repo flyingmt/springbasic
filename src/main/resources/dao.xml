@@ -25,7 +25,5 @@
     </bean>
 
     <bean class="kr.co.fastcampus.cli.AppConfig" />
-    <bean class="kr.co.fastcampus.cli.A" />
-
 
 </beans>

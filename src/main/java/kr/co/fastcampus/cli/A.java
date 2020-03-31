@@ -5,14 +5,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
 
 @Slf4j
+@Component
 public class A {
-    @Resource(name="appBeanB1") private B b;
+    @Resource private B b;
     @Autowired private ApplicationContext context;
     @Value("${catalog.name}") String catalogName;
     @Value("#{systemProperties['java.home']}") String javaHome;

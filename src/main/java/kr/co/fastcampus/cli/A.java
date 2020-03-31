@@ -10,12 +10,13 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
+import javax.inject.Inject;
 
 @Slf4j
 @Component
 public class A {
-    @Autowired private B b;
-    @Autowired private ApplicationContext context;
+    @Inject private B b;
+    @Inject private ApplicationContext context;
     @Value("${catalog.name}") String catalogName;
     @Value("#{systemProperties['java.home']}") String javaHome;
     @Value("#{systemProperties['hello']}") String hello;
